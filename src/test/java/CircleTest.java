@@ -11,10 +11,16 @@ public class CircleTest {
 //    }
 
 
-    //Below you can see how test should be done
+    //Below you can see how tests should be done
+    @Test
+    public void circleObjectTypeTest() {
+        Circle c = new Circle(10);
+        Assert.assertEquals(Circle.class, c.getClass()); //This is how we can check if type of created object is expected type
+    }
+
     @Test
     public void circleAreaTest() {
         Circle c = new Circle(10);
-        Assert.assertEquals(314, Math.round(c.circleA()));
+        Assert.assertEquals(314, Math.round(c.circleA())); //This is how we can check if expected result and calculated result are identical
     }
 }

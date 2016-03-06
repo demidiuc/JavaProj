@@ -12,9 +12,15 @@ public class RectangleTest {
 //    }
 
     @Test
+    public void rectangleObjectTypeTest() {
+        Rectangle r = new Rectangle(1, 1);
+        Assert.assertEquals(Rectangle.class, r.getClass()); //This is how we can check if type of created object is expected type
+    }
+
+    @Test
     public void rectangleAreaTest() {
         Rectangle r = new Rectangle(10, 50);
-
-        Assert.assertEquals(500, r.rectangleArea());
+        Assert.assertEquals(500, r.rectangleArea()); //This is how we can check if expected result and calculated result are identical
+        //TODO: Try to change expected value and see how test result is affected
     }
 }
