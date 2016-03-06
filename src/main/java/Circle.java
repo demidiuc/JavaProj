@@ -4,13 +4,13 @@
 import java.lang.Math;
 public class Circle {
     int r;
-    final double PI=3.14;
+//    final double PI=3.14; //Try to use internal formulas, libraries, methods, etc..
 
     Circle(int x) {
         r=x;
     }
 
     double circleA(){
-        return PI*(r*r);
+        return Math.PI*(r*r);
     }
 }
