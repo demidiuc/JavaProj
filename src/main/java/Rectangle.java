@@ -6,11 +6,11 @@ public class Rectangle {
     int height;
 
     Rectangle(int x, int y) {
-        width=x;
-        height=y;
+        this.width=x;
+        this.height=y;
     }
 
-    int rectangleA() {
+    int rectangleArea() {
         return width*height;
     }
 }
